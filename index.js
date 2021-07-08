@@ -10,7 +10,7 @@ client.on('ready', () => {
   client.user.setActivity(`${process.env.prefix}play // Bot par Queensland#0001`, { type: 'PLAYING' });
 });
 
-const youtube = new YouTube("AIzaSyDhEBfgJiHGoFpiGZ5ugLgfnPoIuIIFm3U");
+const youtube = new YouTube(process.env.apikey);
 const queue = new Map();
 const { Util } = require("discord.js");
 
